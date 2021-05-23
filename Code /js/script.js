@@ -32,3 +32,7 @@ function showSuggestion(list) {
     }
     suggestionBox.innerHTML(listData);
 }
+
+function OpenCategory(cat) {
+    
+}
