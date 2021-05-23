@@ -7,43 +7,21 @@
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="../CSS/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins">
+    <meta name="theme-color" content="#FFFBF6">
+    <!-- https://stackoverflow.com/questions/18712338/make-header-and-footer-files-to-be-included-in-multiple-html-pages -->
+    <!-- J'ai cherché une solution pour garder le même header et footer dans chaque page, sans passer par du PHP. Jquery est une bibliothèque de JavaScript, pas un framework. -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script> 
+        $(function(){
+          $("#header").load("header.html"); 
+          $("#footer").load("footer.html"); 
+        });
+    </script> 
 </head>
 <body>
-    <header class="navbar">
-        <div class="container">
-            <a class="homy" href="#">HOMY</a>
-            <!-- Barre de recherche de la navbar avec suggestion -->
-            <div class="wrapper">
-                <div class="search-input">
-                    <input type="text" onkeyup="inputBox()" placeholder="Rechercher">
-                    <div class="suggestion">
-                        <li>Canapés</li>
-                        <li>Chaises</li>
-                        <li>Miroirs</li>
-                        <li>Tableau</li>
-                        <li>Bougies</li>
-                    </div>
-                    <div class="icon"><img src="../../assets/search.svg" width="20px" height="20px"></div>
-                </div>
-            </div>         
-            <div class="logo">
-                <a href="#"><img src="../../assets/heart.svg"></a>
-                <a href="#"><img src="../../assets/shopping-bag.svg"></a>
-                <a href="#"><img src="../../assets/user.svg"></a>
-            </div>    
-        </div>
-        <!-- Les différentes catégories sous la navbar principales -->
-        <div class="undernavbar">
-            <a href="news.html">Nouveauté</a>
-            <a href="sofas.html">Canapés</a>
-            <a href="chairs.html">Chaises</a>
-            <a href="tables.html">Tables</a>
-            <a href="lights.html">Luminaires</a>
-            <a href="deco.html">Déco</a>
-            <a href="candles.html">Bougies</a>
-        </div>
-    </header>
-    
+
+    <div id="header"></div> 
+
     <img class="imgfond" src="../../assets/FondHomy.png" alt="Fond Homepage" width="100%" height="800px">
     <div class="presentation">
         <h1>Découvrez les nouveautés</h1>
@@ -143,25 +121,8 @@
             </li>
         </ul>
     </div>
-    <div class="newsletter">
-        <h2>Newsletter</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores maiores, doloribus vitae quis amet velit
-        quaerat nobis aut ullam ipsa ut dolorem. Deserunt labore nobis rerum, autem explicabo in inventore.</p>
-        <input type="text" id="email" name="email" placeholder="Entrez votre adresse mail">
-        <div class="inscription"><a href="#">Je m'inscris</a></div>
-    </div>
-    <footer class="footer">
-        <div class="info"></div>
-        <div class="social">
-            <ul>
-                <li><a href="#"><img src="../../assets/logo-facebook.svg" alt="facebook" width="40px" height="40px"></a></li>
-                <li><a href="#"><img src="../../assets/logo-pinterest.svg" alt="pinterest" width="40px" height="40px"></a></li>
-                <li><a href="#"><img src="../../assets/logo-instagram.svg" alt="instagram" width="40px" height="40px"></a></li>
-                <li><a href="#"><img src="../../assets/logo-youtube.svg" alt="youtube" width="40px" height="40px"></a></li>
-                <li><a href="#"><img src="../../assets/logo-twitter.svg" alt="twitter" width="40px" height="40px"></a></li>
-            </ul>
-        </div>
-    </footer>
+    
+    <div id="footer"></div>
     <script src="../js/script.js"></script>
     <script src="../js/suggestion.js"></script>
 </body>
