@@ -1,3 +1,9 @@
+:root{
+    --color-sun: #F4EB92;
+    --color-green: #BEE3C6;
+    --color-earth: #C9B2B5;
+}
+
 *{
     font-family: Poppins;
     padding: 0;
@@ -223,6 +229,15 @@ a {
     position: relative;
     margin: 0 40px;
     filter: saturate(125%);
+}
+.mobilier{
+    border: 6px solid var(--color-earth)
+}
+.luminaire{
+    border: 6px solid var(--color-sun)
+}
+.botanique{
+    border: 6px solid var(--color-green)
 }
 
 .DLM figcaption {
