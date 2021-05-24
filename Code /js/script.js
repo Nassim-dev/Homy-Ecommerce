@@ -1,7 +1,7 @@
 // Afficher tous les éléments de la suggestions dans la barre de recherche 
 let searchWrapper = document.querySelector(".search-input");
-let inputBox = searchWrapper.querySelector("input");
-let suggestionBox = searchWrapper.querySelector(".suggestion");
+// let inputBox = searchWrapper.querySelector("input");
+// let suggestionBox = searchWrapper.querySelector(".suggestion");
 
 // Lorsque l'utilisateur tape les lettres correspondantes de l'objet voulu
 inputBox = (letter)=>{

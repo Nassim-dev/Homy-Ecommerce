@@ -11,24 +11,15 @@ let globalMobilier = false
 console.log("hello world")
 
 
-class DATA {
 
-    GetData() {
-        let json = fetch('DATA.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error("HTTP error " + response.status);
-            }
-            let data = response.json()
-            return data;
-        })
-        return json;
-    }
+
+function getData() {
+    fetch('./js/data.json')
+    .then(response => {
+       console.log("HElllo TEST")
+        console.log(response.json())
+    })
+    
 }
 
-data = new DATA();
-data = data.GetData();
-
-console.log(data)
-
-
+getData()
