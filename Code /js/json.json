@@ -13,7 +13,7 @@
         },
         {
           "ID": "B02",
-          "Nom": "Plante en pot",
+          "Nom": "Plante artificielle en pot",
           "Prix": 8.99,
           "Description": "Plante artificielle qui apporte une touche de fraîcheur année après année.",
           "Caractéristique": ["Diamètre du pot: 9 cm","Hauteur de la plante: 58 cm"],

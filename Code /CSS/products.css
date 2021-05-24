@@ -13,3 +13,28 @@ h2.name-category{
     color: var(--color-earth);
 
 }
+
+/* --------Card ---------- */
+
+.card{
+    height: 480px;
+    width: 300px;
+}
+
+.name h3 {
+    font-weight: 500;
+}
+
+.information {
+    width: 100%; 
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+}
