@@ -14,12 +14,15 @@ console.log("hello world")
 
 
 function getData() {
-    fetch('./js/data.json')
+    fetch('script/data.json')
     .then(response => {
-       console.log("HElllo TEST")
-        console.log(response.json())
+        return response.json()
     })
+    .then(response=> { resolve (response)})
     
 }
 
-getData()
+const data = getData()
+
+console.log(data)
+
