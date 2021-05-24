@@ -1,8 +1,4 @@
-:root{
-    --color-sun: #F4EB92;
-    --color-green: #BEE3C6;
-    --color-earth: #C9B2B5;
-}
+@import "root.css";
 
 *{
     font-family: Poppins;
@@ -208,7 +204,7 @@ a {
 
 /* Catégories */
 .categories {
-    border-top: solid 2px #171717;
+    border-top: solid 1px #171717;
     margin: 50px 150px;
     text-align: center;
 }
@@ -230,17 +226,8 @@ a {
     margin: 0 40px;
     filter: saturate(125%);
 }
-.mobilier{
-    border: 6px solid var(--color-earth)
-}
-.luminaire{
-    border: 6px solid var(--color-sun)
-}
-.botanique{
-    border: 6px solid var(--color-green)
-}
 
-.DLM figcaption {
+.legende {
     position: absolute;
     top: 2450px;
     font-size: 2em;
@@ -249,6 +236,234 @@ a {
 }
 
 /* ----------------------- */
+
+/* Les favoris */
+
+.favorite {
+    position: relative;
+    margin-top: 200px;
+}
+
+.fav_banner {
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 50px;
+    padding: 50px 75px;
+    width: 50%;
+    height: 300px;
+    background-color: #eeb6d3;
+}
+
+.fav_banner h2 {
+    position: relative;
+    font-size: 4em;
+    /* text-transform: uppercase; */
+}
+
+.title_favorite {
+    position: relative;
+    float: left;
+}
+
+.button_favorite {
+    position: relative;
+    float: right;
+    background-color: #fff;
+    border: solid 1px #171717;
+    color: #171717;
+    margin-top: 25px;
+    padding: 10px 75px;
+/*     height: 60px;
+    width: 125px; */
+}
+
+.list_cards {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -30vh;
+    overflow: hidden;
+}
+
+.card {
+    margin-left: 70px;
+}
+
+.card:first-child {
+    margin-left: 20%;
+}
+
+/* ----------------------- */
+
+/* --------Card ---------- */
+
+.name h3 {
+    font-weight: 500;
+}
+
+.information {
+    width: 100%; 
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+/* ----------------------- */
+
+
+/* Le processus */
+
+.title_process {
+    position: relative;
+    top: -100px;
+    font-weight: 200;
+    font-size: 2em;
+    text-align: center;
+}
+
+.process {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10%;
+}
+
+.process h3 {
+    margin: 10%;
+    font-weight: 400;
+}
+
+.process p {
+    font-size: 0.9em;
+}
+
+.unit {
+    width: 25%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* ----------------------- */
+
+/* --- Newsletter --- */
+
+.newsletter {
+    background-color: rgb(192, 222, 240);
+    margin: 10% 0 5% 0;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info h2 {
+    line-height: 2em;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.info {
+    width: 40%;
+}
+
+.info p {
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.inscription {
+    position: relative;
+    top: 30px;
+}
+
+.inscription input {
+    padding: 10px 50px;
+    margin: 10px;
+    font-size: 0.95em;
+}
+
+.signin {
+    background-color: #171717;
+    color: #fff;
+    padding: 10px 50px;
+}
+
+/* ----------------------- */
+
+/* Le footer */
+
+.footer {
+    width: 100%;
+    border-bottom: solid 1px #171717;
+}
+
+.footer a {
+    color: #171717;
+    font-weight: 300;
+    line-height: 2.5em;
+}
+
+.footer h3 {
+    line-height: 3em;
+    font-weight: 500;
+}
+
+.container_footer {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 100px 50px 100px;
+}
+
+.footer_service {
+    width: 150px;
+}
+
+.listes {
+    width: fit-content;
+    line-height: 1.5em;
+    margin: 0 33px;
+}
+
+
+.listes:last-child {
+    margin-right: 0;
+}
+
+.social {
+    margin: 40px 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social a {
+    padding: 10px;
+}
+
+.footer_logo h2 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+/* --2nde partie footer-- */
+
+.extraclient {
+    text-align: center;
+}
+
+.extraclient a {
+    padding: 40px;
+    color: #171717;
+    font-size: 0.8em;
+}
+
+/* ----------------------- */
+
 
 .logo a {
     margin: 15px;
