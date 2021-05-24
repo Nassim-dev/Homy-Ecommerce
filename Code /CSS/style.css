@@ -1,8 +1,4 @@
-:root{
-    --color-sun: #F4EB92;
-    --color-green: #BEE3C6;
-    --color-earth: #C9B2B5;
-}
+@import "root.css";
 
 *{
     font-family: Poppins;
@@ -226,18 +222,19 @@ a {
 }
 
 .DLM img {
+    transition: 0.2s ease-in-out;
     position: relative;
     margin: 0 40px;
     filter: saturate(125%);
 }
-.mobilier{
-    border: 6px solid var(--color-earth)
+.mobilier:hover{
+    border: 6px groove var(--color-earth)
 }
-.luminaire{
-    border: 6px solid var(--color-sun)
+.luminaire:hover{
+    border: 6px groove var(--color-sun)
 }
-.botanique{
-    border: 6px solid var(--color-green)
+.botanique:hover{
+    border: 6px groove var(--color-green)
 }
 
 .DLM figcaption {
