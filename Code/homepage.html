@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> 🏠 HOMY Ecommerce</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <h3><a class="homy" href="#">HOMY</a></h3>
+            <!-- Barre de recherche de la navbar avec suggestion -->
+            <div class="wrapper">
+                <div class="search-input">
+                    <input type="text" onkeyup="inputBox()" placeholder="Rechercher">
+                    <div class="suggestion">
+                        <li>Canapés</li>
+                        <li>Chaises</li>
+                        <li>Miroirs</li>
+                        <li>Tableau</li>
+                        <li>Bougies</li>
+                    </div>
+                    <div class="icon"><img src="assets/search.svg" width="20px" height="20px"></div>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="#"><img src="assets/heart.svg"></a>
+                <a href="#"><img src="assets/shopping-bag.svg"></a>
+                <a href="#"><img src="assets/user.svg"></a>
+            </div>
+        </div>
+        <!-- Les différentes catégories sous la navbar principales -->
+        <div class="undernavbar">
+            <a href="news.html">Nouveauté</a>
+            <a href="sofas.html">Canapés</a>
+            <a href="chairs.html">Chaises</a>
+            <a href="tables.html">Tables</a>
+            <a href="lights.html">Luminaires</a>
+            <a href="deco.html">Déco</a>
+            <a href="candles.html">Bougies</a>
+        </div>
+    </div>
+
+    <img class="imgfond" src="assets/FondHomy.png" alt="Fond Homepage" width="100%" height="800px">
+    <div class="presentation">
+        <h1>Découvrez les nouveautés</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+        <a class="news" href="#">Voir plus</a>
+    </div>
+    <div class="week">
+        <img src="assets/decosemaine.jpg" alt="Décoration de la semaine" width="75%" height="800px">
+        <div class="description_week">
+            <h3> Déco de la semaine</h3>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation veniam, quis nostrud
+                exercitation</p>
+            <a class="buttonweek" href="#">Voir plus</a>
+        </div>
+    </div>
+    <section class="categories">
+        <h2>Catégories</h2>
+        <div class="DLM">
+            <div>
+                <img src="assets/decoration.jpg" alt="Décoration" width="300px" height="400px">
+                <div class="legende">Décoration</div>
+            </div>
+            <div>
+                <img src="assets/luminaire.jpg" alt="Lumoinaires" width="300px" height="400px">
+                <div class="legende">Luminaires</div>
+            </div>
+            <div>
+                <img src="assets/mobilier.jpg" alt="Mobilier" width="300px" height="400px">
+                <div class="legende">Mobilier</div>
+            </div>
+        </div>
+    </section>
+    <!-- Bannière produit favoris  -->
+    <div class="favorite">
+        <div class="fav_banner">
+            <h2 class="title_favorite">Les favoris</h2>
+            <a class="button_favorite" href="#">Voir plus</a>
+        </div>
+        <!-- Fiches des produits favoris (Image + descriptions et prix) -->
+        <div class="list_cards">
+            <div class="card">
+                <a href="product.html"><img src="assets/globe.png" alt="Globe noir" width="300" height="400px"></a>
+                <div class="name">
+                    <h3>Nom Article</h3>
+                    <h3>29.90€</h3>
+                </div>
+                <div class="information">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/fleurallongée.jpg" alt="Fleur allongée" width="300" height="400px">
+                <div class="name">
+                    <h3>Nom Article</h3>
+                    <h3>29.90€</h3>
+                </div>
+                <div class="information">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/chaisepivot.jpg" alt="chaise pivot 360" width="300" height="400px">
+                <div class="name">
+                    <h3>Nom Article</h3>
+                    <h3>29.90€</h3>
+                </div>
+                <div class="information">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/chaisepivot.jpg" alt="chaise pivot 360" width="300" height="400px">
+                <div class="name">
+                    <h3>Nom Article</h3>
+                    <h3>29.90€</h3>
+                </div>
+                <div class="information">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="assets/chaisepivot.jpg" alt="chaise pivot 360" width="300" height="400px">
+                <div class="name">
+                    <h3>Nom Article</h3>
+                    <h3>29.90€</h3>
+                </div>
+                <div class="information">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="title_process">Comment nous fonctionnons ?</h2>
+    <div class="process">
+        <div class="unit">
+            <img src="assets/search.svg" alt="Selection" width="35px" height="35px">
+            <h3>Selection</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsum ut, 
+                beatae maxime similique dicta.</p>
+        </div>
+        <div class="unit">
+            <img src="assets/monitor.svg" alt="Mise en Ligne" width="40px" height="35px">
+            <h3>Mise en Ligne</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsum ut, 
+            beatae maxime similique dicta.</p>
+        </div>
+        <div class="unit">
+            <img src="assets/check-circle.svg" alt="Satisfaction" width="35px" height="35px">
+            <h3>Satisfaction</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt ipsum ut, 
+                beatae maxime similique dicta.</p>
+        </div>
+    </div>
+    <div class="newsletter">
+        <div class="info">
+            <h2>Newsletter</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores maiores, doloribus vitae quis amet velit
+            quaerat nobis aut ullam ipsa ut dolorem. Deserunt labore nobis rerum, autem explicabo in inventore.</p>
+        </div>    
+        <div class="inscription">
+            <input type="text" id="email" name="email" placeholder="Entrez votre adresse mail">
+            <a class="signin" href="#">Je m'inscris</a>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container_footer">
+            <div class="listes">
+                <h3>A propos</h3>
+                <li><a href="#">A propos</a></li>
+                <li><a href="#">Designer</a></li>
+                <li><a href="#">Nous rejoindre</a></li>
+            </div>
+            <div class="listes">
+                <h3>Besoin d'aide ?</h3>
+                <li><a href="#">Suivre votre commande</a></li>
+                <li><a href="#">Aide & FAQ</a></li>
+                <li><a href="#">Livraison</a></li>
+                <li><a href="#">Retours & remboursements</a></li>
+                <li><a href="#">Entretien de votre mobilier</a></li>
+                <li><a href="#">Affiliation</a></li>
+                <li><a href="#">Guides d’achat & d’entretien</a></li>
+            </div>
+            <div class="listes">
+                <h3>Nos services</h3>
+                <li><a href="#">Coaching déco</a></li>
+                <li><a href="#">Idées : notre blog</a></li>
+                <li><a href="#">Bon d’achat</a></li>
+                <li><a href="#">Visiter nos showrooms</a></li>
+                <li><a href="#">HOMY + Seazon</a></li>
+            </div>
+            <div class="listes">
+                <h3>Explorer par pièce</h3>
+                <li><a href="#">Meubles de salon</a></li>
+                <li><a href="#">Meubles de salle à manger</a></li>
+                <li><a href="#">Meubles de cuisine</a></li>
+                <li><a href="#">Meubles de chambre</a></li>
+                <li><a href="#">Meubles de salle de bain</a></li>
+                <li><a href="#">Meubles de bureau</a></li>
+                <li><a href="#">Tous les meubles</a></li>
+            </div>
+            <div class="listes">
+                <h3>Explorer par style</h3>
+                <li><a href="#">Meubles rétro</a></li>
+                <li><a href="#">Meubles classiques</a></li>
+                <li><a href="#">Meubles industriels</a></li>
+                <li><a href="#">Meubles modernes</a></li>
+            </div>
+        </div>
+        <div class="social">
+            <div class="social_logo">
+                <a href="#"><img src="assets/logo-facebook.svg" alt="facebook" width="40px" height="40px"></a>
+                <a href="#"><img src="assets/logo-pinterest.svg" alt="pinterest" width="40px" height="40px"></a>
+                <a href="#"><img src="assets/logo-instagram.svg" alt="instagram" width="40px" height="40px"></a>
+                <a href="#"><img src="assets/logo-youtube.svg" alt="youtube" width="40px" height="40px"></a>
+                <a href="#"><img src="assets/logo-twitter.svg" alt="twitter" width="40px" height="40px"></a>
+            </div>
+            <div class="footer_logo">
+                <h2>Homy</h2>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+    <div class="extraclient">
+        <a href="#">Politique de confidentialité & cookies</a>
+        <a href="#">Plan du site</a>
+        <a href="#">Avis des clients</a>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/suggestion.js*"></script>
+</body>
+
+</html>

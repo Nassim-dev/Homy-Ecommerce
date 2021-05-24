@@ -1,0 +1,474 @@
+*{
+    font-family: Poppins;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(255, 250, 244);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+}
+
+/* Fond Homepage */
+.imgfond {
+    position: relative;
+    top: 50px;
+    filter: brightness(70%);
+}
+
+.presentation h1 {
+    font-size: 2.5em;
+}
+
+.presentation {
+    position: absolute;
+    top: 220px;
+    margin: 100px 200px;
+    color: #fff;
+}
+
+.presentation p:not(.news) {
+    width: 500px;
+    margin: 40px 0;
+    font-size: 1.3em;
+}
+
+.news {
+    background-color: #fff;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    color: #171717;
+    /* border-radius: 25px; */
+}
+
+/* ------------------------ */
+
+
+/* Image déco de la semaine */
+.week img {
+    position: relative;
+    margin: 10%;
+}
+
+.description_week h3 {
+    text-transform: uppercase;
+}
+
+.description_week {
+    position: absolute;
+    top: 1450px;
+    right: 120px;
+    width: 280px;
+    height: 380px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 3px rgba(0,0,0,0.12);
+}
+
+.buttonweek {
+    background-color: #171717;
+    color: #fff;
+    padding: 10px 50px;
+}
+
+.description_week h3,
+.description_week p,
+.description_week .buttonweek {
+    margin: 20px;
+}
+
+
+/* ------------------------ */
+
+/* Style & Suggestion de la recherche */
+.wrapper {
+    max-width: 350px;
+    margin-top: 12px;
+}
+
+.wrapper .search-input {
+    background-color: #fff;
+    min-width: 200px;
+    position: relative;
+}
+
+.search-input input {
+    height: 40px;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: solid 1px #171717;
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+.search-input .icon {
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* text-align: center; */
+}
+
+.search-input .suggestion {
+    max-height: 200px;
+    padding: 5px;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.search-input.active .suggestion {
+    padding: 10px 5px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.search-input.active .suggestion li {
+    display: block;
+}
+
+.search-input li {
+    max-height: 200px;
+    padding: 5px 10px;
+    width: 85%;
+    cursor: default;
+    display: none;
+}
+
+.search-input li:hover {
+    background: rgb(255, 250, 244);
+}
+
+/* ---------------------------------- */
+
+
+/* Animation sous la navbar */
+.undernavbar a::after {    
+    content: '';
+    position: absolute;
+    width: 90%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 10%;
+    left: 5%;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+}
+
+.undernavbar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+.navbar .container,
+.undernavbar {
+    display: flex;
+    padding: 5px;
+    background-color: white;
+}
+
+.navbar .container {
+    justify-content: space-between;
+}
+
+.navbar .undernavbar {
+    justify-content: center;
+}
+
+.undernavbar a {
+    padding: 10px 20px 15px 20px;
+    color: black;
+}
+
+/* ----------------------- */
+
+/* Catégories */
+.categories {
+    border-top: solid 1px #171717;
+    margin: 50px 150px;
+    text-align: center;
+}
+
+
+.categories h2 {
+    font-size: 2em;
+    text-align: center;
+    padding: 75px 100px;
+}
+
+.DLM {
+    display: flex;
+    flex-direction: row;
+}
+
+.DLM img {
+    position: relative;
+    margin: 0 40px;
+    filter: saturate(125%);
+}
+
+.legende {
+    position: absolute;
+    top: 2450px;
+    font-size: 2em;
+    margin: 50px 60px;
+    color: #fff;
+}
+
+/* ----------------------- */
+
+/* Les favoris */
+
+.favorite {
+    position: relative;
+    margin-top: 200px;
+}
+
+.fav_banner {
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 50px;
+    padding: 50px 75px;
+    width: 50%;
+    height: 300px;
+    background-color: #eeb6d3;
+}
+
+.fav_banner h2 {
+    position: relative;
+    font-size: 4em;
+    /* text-transform: uppercase; */
+}
+
+.title_favorite {
+    position: relative;
+    float: left;
+}
+
+.button_favorite {
+    position: relative;
+    float: right;
+    background-color: #fff;
+    border: solid 1px #171717;
+    color: #171717;
+    margin-top: 25px;
+    padding: 10px 75px;
+/*     height: 60px;
+    width: 125px; */
+}
+
+.list_cards {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -30vh;
+    overflow: hidden;
+}
+
+.card {
+    margin-left: 70px;
+}
+
+.card:first-child {
+    margin-left: 20%;
+}
+
+/* ----------------------- */
+
+/* --------Card ---------- */
+
+.name h3 {
+    font-weight: 500;
+}
+
+.information {
+    width: 100%; 
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+/* ----------------------- */
+
+
+/* Le processus */
+
+.title_process {
+    position: relative;
+    top: -100px;
+    font-weight: 200;
+    font-size: 2em;
+    text-align: center;
+}
+
+.process {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10%;
+}
+
+.process h3 {
+    margin: 10%;
+    font-weight: 400;
+}
+
+.process p {
+    font-size: 0.9em;
+}
+
+.unit {
+    width: 25%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* ----------------------- */
+
+/* --- Newsletter --- */
+
+.newsletter {
+    background-color: rgb(192, 222, 240);
+    margin: 10% 0 5% 0;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.info h2 {
+    line-height: 2em;
+    font-size: 2em;
+    font-weight: 400;
+}
+
+.info {
+    width: 40%;
+}
+
+.info p {
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.inscription {
+    position: relative;
+    top: 30px;
+}
+
+.inscription input {
+    padding: 10px 50px;
+    margin: 10px;
+    font-size: 0.95em;
+}
+
+.signin {
+    background-color: #171717;
+    color: #fff;
+    padding: 10px 50px;
+}
+
+/* ----------------------- */
+
+/* Le footer */
+
+.footer {
+    width: 100%;
+    border-bottom: solid 1px #171717;
+}
+
+.footer a {
+    color: #171717;
+    font-weight: 300;
+    line-height: 2.5em;
+}
+
+.footer h3 {
+    line-height: 3em;
+    font-weight: 500;
+}
+
+.container_footer {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 100px 50px 100px;
+}
+
+.footer_service {
+    width: 150px;
+}
+
+.listes {
+    width: fit-content;
+    line-height: 1.5em;
+    margin: 0 33px;
+}
+
+
+.listes:last-child {
+    margin-right: 0;
+}
+
+.social {
+    margin: 40px 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social a {
+    padding: 10px;
+}
+
+.footer_logo h2 {
+    text-transform: uppercase;
+    font-size: 2.5em;
+}
+
+/* --2nde partie footer-- */
+
+.extraclient {
+    text-align: center;
+}
+
+.extraclient a {
+    padding: 40px;
+    color: #171717;
+    font-size: 0.8em;
+}
+
+/* ----------------------- */
+
+
+.logo a {
+    margin: 15px;
+}
+
+.homy {
+    margin: 10px;
+    font-size: 2em;
+    color:#171717;
+}
