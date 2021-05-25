@@ -13,6 +13,8 @@ console.log("hello world")
 
 
 function getData(indx) {
+
+    
     fetch('script/data.json')
     .then(response => {
         return response.json()
@@ -48,14 +50,17 @@ function getData(indx) {
         }
 
         
-
-        
     })
 }
 
+// Mafonction getData fonctionne très bien lorsque je suis sur le fichier JS. dès lors que je fais appel à la fonction coté HTML rien ne fonctionne.
+// Comment faire en sorte d'entrer en paramètre le bon parametre en fonction de la catégorie cliqué precedement sur l'index ?
 
+// J'ai essayé ca sans succès >
+x = document.querySelector("#2").itemid
+window.addEventListener('load', function(event) {
+    const data = getData(x)
+})
 
-
-const data = getData(2)
 
 
