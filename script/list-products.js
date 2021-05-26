@@ -51,14 +51,13 @@ function getData(indx) {
     })
 }
 
-// Mafonction getData fonctionne très bien lorsque je suis sur le fichier JS. dès lors que je fais appel à la fonction coté HTML rien ne fonctionne.
-// Comment faire en sorte d'entrer en paramètre le bon parametre en fonction de la catégorie cliqué precedement sur l'index ?
 
-// J'ai essayé ca sans succès >
-// var x = document.getElementById("2").itemid
+// Accéder à l'index incrit en variable dans le lien
 
-// data = getData(x)
+// https://lage.us/Javascript-Pass-Variables-to-Another-Page.html
 
-
+var queryString = location.search.substring(1)
+console.log(queryString)
+data = getData(queryString)
 
 
