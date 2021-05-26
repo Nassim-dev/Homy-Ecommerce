@@ -1,19 +1,17 @@
 
-const nameCat = document.querySelector(".name-category")
+let nameCat = document.querySelector(".name-category")
 
 const listContainer = document.querySelector(".list-item")
 
 const card = document.querySelector(".card")
 
-
-
 let globalMobilier = false
+
 console.log("hello world")
-
-
 
 function getData(indx) {
 
+    console.log("getDATA")
     
     fetch('script/data.json')
     .then(response => {
@@ -57,10 +55,10 @@ function getData(indx) {
 // Comment faire en sorte d'entrer en paramètre le bon parametre en fonction de la catégorie cliqué precedement sur l'index ?
 
 // J'ai essayé ca sans succès >
-x = document.querySelector("#2").itemid
-window.addEventListener('load', function(event) {
-    const data = getData(x)
-})
+// var x = document.getElementById("2").itemid
+
+// data = getData(x)
+
 
 
 

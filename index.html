@@ -13,10 +13,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script> 
         $(function(){
-          $("#header").load("header.html"); 
-          $("#footer").load("footer.html"); 
-        });
+          $("#header").load("header.html")
+          $("#footer").load("footer.html")
+        })
+
     </script> 
+
 </head>
 <body>
 
@@ -43,17 +45,17 @@
         <h2>Catégories</h2>
         <div class="DLM">
             <div>
-                <a href="/products_by_category.html" onclick="getData(0)">
+                <a href="/products_by_category.html" onclick= getData(0)>
                 <img src="./assets/decoration.jpg" alt="Décoration" width="300px" height="400px"></a>
                 <div class="legende">Décoration</div>
             </div>
             <div>
-                <a href="/products_by_category.html" onclick="getData(1)">
+                <a href="/products_by_category.html" onclick= getData(1)>
                 <img src="./assets/luminaire.jpg" alt="Lumoinaires" width="300px" height="400px"></a>
                 <div class="legende">Luminaires</div>
             </div>
             <div>
-                <a id="2" href="/products_by_category.html" onclick="getData(2)" itemid="2">
+                <a id="2" href="/products_by_category.html" onclick= getData(2) itemid="2">
                 <img src="./assets/mobilier.jpg" alt="Mobilier" width="300px" height="400px" ></a>
                 <div class="legende">Mobilier</div>
             </div>
