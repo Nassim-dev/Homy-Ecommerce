@@ -1,11 +1,9 @@
 
 let nameCat = document.querySelector(".name-category")
-
 const listContainer = document.querySelector(".list-item")
-
 const card = document.querySelector(".card")
 
-let globalMobilier = false
+
 
 console.log("hello world")
 
@@ -21,17 +19,6 @@ function getData(indx) {
         // NOM du Produit :
         var catName = Object.keys(json.Categories[indx])[0]
         nameCat.innerHTML = catName
-        // Les Produits
-        // let nameProduct = document.getElementById("nom")
-        // let price = document.getElementById("price")
-        // let description = document.querySelector(".information")
-        // let pic =  document.querySelector(".pic")
-        // let myList = document.querySelector(".list-item")
-
-        if (indx === 0){
-            return cat = Botanique
-        }
-
 
         function listing(cat) {
             for(var i = 0; i < Object.values(json.Categories[indx])[0].length; i++) {
@@ -42,20 +29,19 @@ function getData(indx) {
                 let description = Object.values(cat)[i].Description
                 let pic =  Object.values(cat)[i].Image
                 let myList = document.querySelector(".list-item")
-                
-                function cardCreation(pic, name, price, description) {
                     
-                }
-                
+                let card = '<a class="pic" href="product.html"><img src= '+pic+' width="300" height="400px"></a><div class="containerUp"><h3 id="nom">'+nameProduct+'</h3><h3 id="price">'+price+'</h3></div><p class="information">'+description+'</p>'
+                listItem.innerHTML = card
+
                 console.log(nameProduct)
-      
+    
                 myList.appendChild(listItem)
             }
         }
 
         if (indx == 0) {
             var cat = json.Categories[0].Botanique
-            const ls = listing(cat)
+            var ls = listing(cat)
         }
         if (indx == 1) {
             var cat = json.Categories[1].Luminaire
