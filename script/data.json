@@ -9,7 +9,7 @@
           "Description": "Ce bouquet artificiel et plus vrai que nature gardera toute sa beauté année après année.",
           "Caractéristique": ["Hauteur: 32 cm"],
           "Avis": 4,
-          "Image": "../Ressources/Pics/Botanique/B01.jpg"
+          "Image": "script/Ressources/Pics/Botanique/B01.jpg"
         },
         {
           "ID": "B02",
@@ -18,7 +18,7 @@
           "Description": "Plante artificielle qui apporte une touche de fraîcheur année après année.",
           "Caractéristique": ["Diamètre du pot: 9 cm","Hauteur de la plante: 58 cm"],
           "Avis": 4.5,
-          "Image": "../Ressources/Pics/Botanique/B02.jpg"
+          "Image": "script/Ressources/Pics/Botanique/B02.jpg"
         },
         {
           "ID": "B03",
@@ -27,7 +27,7 @@
           "Description": "Ce vase est idéal pour les lys ou autres fleurs à longue tige.",
           "Caractéristique": ["Hauteur: 21 cm"],
           "Avis": 5,
-          "Image": "../Ressources/Pics/Botanique/B03.jpg"
+          "Image": "script/Ressources/Pics/Botanique/B03.jpg"
         }
       ]
     },
@@ -40,7 +40,7 @@
           "Description": "Créez votre propre suspension en combinant l'abat-jour avec une monture électrique pour suspension.",
           "Caractéristique": ["Diamètre: 37 cm","Hauteur: 18 cm"],
           "Avis": 4.2,
-          "Image": "../Ressources/Pics/Luminaire/L01.jpg"
+          "Image": "script/Ressources/Pics/Luminaire/L01.jpg"
         },
         {
           "ID": "L02",
@@ -49,7 +49,7 @@
           "Description": "Créez une atmosphère chaleureuse et accueillante dans votre intérieur grâce à cet abat-jour en tissu qui propage une lumière diffuse.",
           "Caractéristique": ["Max.: 13 W","largeur abat-jour: 37 cm","Hauteur max.: 151 cm","Diamètre du pied: 62 cm"],
           "Avis": 4.8,
-          "Image": "../Ressources/Pics/Luminaire/L02.jpg"
+          "Image": "script/Ressources/Pics/Luminaire/L02.jpg"
         },
         {
           "ID": "L03",
@@ -58,7 +58,7 @@
           "Description": "Une source lumineuse à LED consomme 85% d'énergie en moins et dure 10 fois plus longtemps qu'une ampoule à incandescence.",
           "Caractéristique": ["Classe énergétique: A+"],
           "Avis": 3.9,
-          "Image": "../Ressources/Pics/Luminaire/L03.jpg"
+          "Image": "script/Ressources/Pics/Luminaire/L03.jpg"
         }
       ]
     },
@@ -71,7 +71,7 @@
           "Description": "La forme du dossier et du siège de la chaise offre un grand confort d'assise.",
           "Caractéristique": ["Testé pour: 110 kg","Largeur: 58 cm","Profondeur: 61 cm","Hauteur: 84 cm"],
           "Avis": 4.4,
-          "Image": "../Ressources/Mobilier/M01.jpg"
+          "Image": "script/Ressources/Mobilier/M01.jpg"
         },
         {
           "ID": "M02",
@@ -80,7 +80,7 @@
           "Description": "Ce canapé se transforme facilement et rapidement en un lit spacieux. Il suffit de retirer les coussins de dossier et de tirer la structure d'assise.A la fois canapé, méridienne et lit pour deux.",
           "Caractéristique": ["Longueur: 230 cm","Profondeur: 151 cm","Hauteur: 66 cm"],
           "Avis": 4.8,
-          "Image": "../Ressources/Pics/Mobilier/M02.jpg"
+          "Image": "script/Ressources/Pics/Mobilier/M02.jpg"
         },
         {
           "ID": "M03",
@@ -89,7 +89,7 @@
           "Description": "Grâce à sa petite taille, la table peut s'utiliser partout, même lorsque l'espace est restreint.",
           "Caractéristique": ["Longueur: 74 cm","Largeur: 74 cm","Hauteur: 75 cm"],
           "Avis": 3.8,
-          "Image": "../Ressources/Pics/Mobilier/M03.jpg"
+          "Image": "script/Ressources/Pics/Mobilier/M03.jpg"
         }
       ]
     }
