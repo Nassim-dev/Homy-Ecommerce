@@ -16,9 +16,26 @@ h2.name-category{
 
 /* --------Card ---------- */
 
-.card{
+.list-item{
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.list-item li{
     height: 480px;
     width: 300px;
+    margin-bottom: 80px;
+
+}
+/* Toutes les images sont libres de droits */
+.list-item li img{
+    width: 100%;
+    height: 400px;
+    background-size: 0%;
+
 }
 
 .containerUp h3 {
@@ -37,4 +54,5 @@ h2.name-category{
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 0;
+    font-style: bold;
 }

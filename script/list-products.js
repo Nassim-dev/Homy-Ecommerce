@@ -30,7 +30,7 @@ function getData(indx) {
                 let pic =  Object.values(cat)[i].Image
                 let myList = document.querySelector(".list-item")
                     
-                let card = '<a class="pic" href="product.html"><img src= '+pic+' width="300" height="400px"></a><div class="containerUp"><h3 id="nom">'+nameProduct+'</h3><h3 id="price">'+price+'</h3></div><p class="information">'+description+'</p>'
+                let card = '<a class="pic" href="pagesuivant.html?"'+id+'><img src= '+pic+'></a><div class="containerUp"><h3 id="nom">'+nameProduct+'</h3><h3 id="price">'+price+'</h3></div><p class="information">'+description+'</p>'
                 listItem.innerHTML = card
 
                 console.log(nameProduct)
