@@ -21,7 +21,7 @@ h2.name-category{
     width: 300px;
 }
 
-.name h3 {
+.containerUp h3 {
     font-weight: 500;
 }
 
@@ -32,7 +32,7 @@ h2.name-category{
     line-height: 1.5em;
 }
 
-.name {
+.containerUp {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

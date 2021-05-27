@@ -18,25 +18,44 @@ function getData(indx) {
         return response.json()
     })
     .then(function(json) {
-
+        // NOM du Produit :
         var catName = Object.keys(json.Categories[indx])[0]
         nameCat.innerHTML = catName
+        // Les Produits
+        // let nameProduct = document.getElementById("nom")
+        // let price = document.getElementById("price")
+        // let description = document.querySelector(".information")
+        // let pic =  document.querySelector(".pic")
+        // let myList = document.querySelector(".list-item")
 
-        function listing(Cat) {
+        if (indx === 0){
+            return cat = Botanique
+        }
 
+
+        function listing(cat) {
             for(var i = 0; i < Object.values(json.Categories[indx])[0].length; i++) {
-        
-                listItem = Object.values(Cat)[i].Nom
-                console.log(listItem)
+                var listItem = document.createElement('li')
+
+                let nameProduct = Object.values(cat)[i].Nom
+                let price = Object.values(cat)[i].Prix
+                let description = Object.values(cat)[i].Description
+                let pic =  Object.values(cat)[i].Image
+                let myList = document.querySelector(".list-item")
+                
+                function cardCreation(pic, name, price, description) {
+                    
+                }
+                
+                console.log(nameProduct)
+      
+                myList.appendChild(listItem)
             }
-            
         }
 
         if (indx == 0) {
-            
-        var cat = json.Categories[0].Botanique
-        const ls = listing(cat)
-    
+            var cat = json.Categories[0].Botanique
+            const ls = listing(cat)
         }
         if (indx == 1) {
             var cat = json.Categories[1].Luminaire
