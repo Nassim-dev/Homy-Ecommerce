@@ -20,7 +20,9 @@ function getData(indx) {
         var catName = Object.keys(json.Categories[indx])[0]
         nameCat.innerHTML = catName
 
+
         function listing(cat) {
+
             for(var i = 0; i < Object.values(json.Categories[indx])[0].length; i++) {
                 var listItem = document.createElement('li')
 
@@ -30,7 +32,7 @@ function getData(indx) {
                 let pic =  Object.values(cat)[i].Image
                 let myList = document.querySelector(".list-item")
                     
-                let card = '<a class="pic" href="pagesuivant.html?"'+id+'><img src= '+pic+'></a><div class="containerUp"><h3 id="nom">'+nameProduct+'</h3><h3 id="price">'+price+'</h3></div><p class="information">'+description+'</p>'
+                let card = '<a class="pic" href="ficheproduit.html?'+indx+'/'+i+'"><img src= '+pic+'></a><div class="containerUp"><h3 id="nom">'+nameProduct+'</h3><h3 id="price">'+price+'</h3></div><p class="information">'+description+'</p>'
                 listItem.innerHTML = card
 
                 console.log(nameProduct)
@@ -42,10 +44,12 @@ function getData(indx) {
         if (indx == 0) {
             var cat = json.Categories[0].Botanique
             var ls = listing(cat)
+            nameCat.style.color = "#BEE3C6"           
         }
         if (indx == 1) {
             var cat = json.Categories[1].Luminaire
             const ls = listing(cat)
+            nameCat.style.color = "#ebe27a"    
         }
         if (indx == 2) {
             var cat = json.Categories[2].Mobilier
