@@ -220,6 +220,8 @@ a {
 .DLM {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
 
 .DLM img {
@@ -417,7 +419,7 @@ a {
 .container_footer {
     display: flex;
     flex-direction: row;
-    margin: 0px 100px 50px 100px;
+    margin: 0px 100px 75px 100px;
     justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: nowrap;
