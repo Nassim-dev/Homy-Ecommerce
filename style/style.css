@@ -181,6 +181,25 @@ a {
     top: 0%;
 }
 
+.number {
+    height: 16px;
+    width: 16px;
+    z-index: 3;
+    background-color: rgb(232, 164, 81);
+    border-radius: 100%;
+    position: absolute;
+    bottom: 20px;
+    right: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size:10px;
+}
+.number span {
+    padding-left: 1px;
+}
+
 .navbar .container,
 .undernavbar {
     display: flex;
