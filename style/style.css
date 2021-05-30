@@ -181,6 +181,25 @@ a {
     top: 0%;
 }
 
+.number {
+    height: 16px;
+    width: 16px;
+    z-index: 3;
+    background-color: rgb(232, 164, 81);
+    border-radius: 100%;
+    position: absolute;
+    bottom: 20px;
+    right: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size:10px;
+}
+.number span {
+    padding-left: 1px;
+}
+
 .navbar .container,
 .undernavbar {
     display: flex;
@@ -220,6 +239,8 @@ a {
 .DLM {
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
 
 .DLM img {
@@ -417,7 +438,7 @@ a {
 .container_footer {
     display: flex;
     flex-direction: row;
-    margin: 0px 100px 50px 100px;
+    margin: 0px 100px 75px 100px;
     justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: nowrap;
@@ -468,6 +489,329 @@ a {
 
 /* ----------------------- */
 
+
+.logo a {
+    margin: 15px;
+}
+
+.homy {
+    margin: 10px;
+    font-size: 2em;
+    color:#171717;
+}
+
+/* __________________________________________________________________________________ */
+
+/* -- Media Screen --*/
+
+@media (max-width: 920px) {
+
+    .undernavbar a,
+    .logo {
+        display: none;
+    }
+
+    .search-input {
+        width: 150px;
+    }
+
+    .navbar h3{
+        font-size: 0.8em;
+        padding: 10px;
+    }
+
+    .DLM {
+        flex-direction: column;
+        margin: 20%;
+    }
+
+    .week img {
+        width: 100%;
+        height: 600px;
+    }
+
+    .presentation p:not(.news) {
+        width: 300px;
+    }
+
+}
+
+
+
+
+/* ---------------------------------- */
+
+
+/* Animation sous la navbar */
+.undernavbar a::after {    
+    content: '';
+    position: absolute;
+    width: 90%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 10%;
+    left: 5%;
+    background-color: black;
+    transform-origin: bottom right;
+    transition: transform 0.4s ease-out;
+}
+
+.undernavbar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    z-index: 2;
+    width: 100%;
+}
+
+.navbar .container,
+.undernavbar {
+    display: flex;
+    background-color: white;
+}
+
+.navbar .container {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .undernavbar {
+    justify-content: center;
+}
+
+.undernavbar a {
+    padding: 10px 20px;
+    color: black;
+}
+
+/* ----------------------- */
+
+/* ----------------------- */
+
+/* Les favoris */
+
+.favorite {
+    position: relative;
+    margin-top: 200px;
+}
+
+.fav_banner {
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 50px;
+    padding: 50px 75px;
+    width: 50%;
+    height: 300px;
+    background-color: #eeb6d3;
+}
+
+.fav_banner h2 {
+    position: relative;
+    font-size: 4em;
+    /* text-transform: uppercase; */
+}
+
+.title_favorite {
+    position: relative;
+    float: left;
+}
+
+.button_favorite {
+    position: relative;
+    float: right;
+    background-color: #fff;
+    border: solid 1px #171717;
+    color: #171717;
+    margin-top: 25px;
+    padding: 10px 75px;
+/*     height: 60px;
+    width: 125px; */
+}
+
+.name {
+    width: 300px;
+}
+
+.information p {
+    width: 300px;
+}
+
+.list_cards,
+.list_consult,
+.list_combine {
+    display: flex;
+    flex-direction: row;
+    /* position: relative; */
+    /* top: -30vh; */
+    overflow: hidden;
+}
+
+.card {
+    width: 100%;
+    margin-left: 70px;
+}
+
+.card:first-child {
+    margin-left: 10%;
+}
+
+/* ----------------------- */
+
+/* --------Card ---------- */
+
+.name h3 {
+    font-weight: 500;
+}
+
+.information {
+    width: 100%; 
+    font-size: 0.9em;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+/* ----------------------- */
+
+
+/* Le processus */
+
+.title_process {
+    position: relative;
+    top: -100px;
+    font-weight: 200;
+    font-size: 2em;
+    text-align: center;
+}
+
+.process {
+    display: flex;
+    flex-direction: row;
+    margin: 0 10%;
+}
+
+.process h3 {
+    margin: 10%;
+    font-weight: 400;
+}
+
+.process p {
+    font-size: 0.9em;
+}
+
+.unit {
+    width: 25%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/* ----------------------- */
+
+/* ---- Page produit ----- */
+
+.image_article img {
+    width: 600px;
+    height: auto;
+}
+
+.info_article {
+    margin: 0 5rem;
+}
+
+.article {
+    display: flex;
+    flex-direction: row;
+    margin: 5% auto;
+    width: 90%;
+}
+
+.article > p, h4, h3, h2, h1, .main_article {
+    margin: 20px 0;
+}
+
+.article h2 {
+    font-weight: 500;
+}
+
+.favorite_article {
+    display: inline-flex;
+}
+
+.favorite_article p {
+    margin-left: 30px;
+}
+
+.header_article { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header_article h1 {
+    font-size: 3em;
+    font-weight: 400;
+}
+
+.main_article {
+    width: 500px    ;
+}
+
+.row-circle {
+    display: flex;
+    flex-direction: row;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    margin: 0 20px;
+    border-radius: 100% ;
+    border: solid 1px #171717;
+}
+
+.stock {
+    display: inline-flex;
+}
+
+.paniershop {
+    width: fit-content;
+    padding: 1rem 2rem;
+    margin-bottom: 2rem;
+    background-color: #171717;
+    color: #fff;
+}
+
+/* ------ Consulté ------- */
+
+.consult h2,
+.combine h2 {
+    font-weight: 400;
+    margin: 5%;
+}
+
+/* ----------------------- */
+
+
+/* ----------------------- */
+
+@media screen and (max-width: 480px) {
+    .image_article img {
+        width: 250px;
+        height: auto;
+    }
+}
 
 .logo a {
     margin: 15px;
