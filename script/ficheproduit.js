@@ -16,8 +16,8 @@ data = getData(index)
 // On créer une liste accessible et qui ne disparait pas lors du rafraichissement
 
 panier = []
-sessionStorage.setItem("panier", JSON.stringify(panier))
-jsonPanier = JSON.parse(sessionStorage.getItem("panier"))
+localStorage.setItem("panier", JSON.stringify(panier))
+jsonPanier = JSON.parse(localStorage.getItem("panier"))
 
 /////////</PANIER>
 
@@ -64,21 +64,35 @@ function getData(indx) {
 }
 
 let buttonAjoutAuPanier = document.querySelector(".paniershop")
-var getNumberPanier = parseInt(sessionStorage.getItem("numberPanier"))
-    
+
+// Init le panier est vide donc 0
+getNumberPanier = panier.length
+
+
 document.querySelector(".number span").innerHTML = getNumberPanier
+
 
 buttonAjoutAuPanier.addEventListener('click', function(e) {
     console.log("click")
     // Vérifier que le produit est déjà dans le panier ou non
     // SI non:
-    //   Incrémenter de 1 le panier
-    var getNumberPanier = parseInt(sessionStorage.getItem("numberPanier"))
-    
-    sessionStorage.setItem("numberPanier", ++getNumberPanier)
-    console.log(getNumberPanier)
-    document.querySelector(".number span").innerHTML = getNumberPanier
     //   Ajouter [inx,i] dans la liste panier dans le session storage 
+
+    panier.push([index,i])
+    console.log(panier)
+
+    localStorage.setItem("panier", JSON.stringify(panier))
+    jsonPanier = JSON.parse(localStorage.getItem("panier"))
+
+    // On vérifie l'incrémentation
+    getNumberPanier = panier.length
+    console.log(panier.length)
+    localStorage.setItem("numberPanier", getNumberPanier)
+
+    document.querySelector(".number span").innerHTML = getNumberPanier
+
+    // //////// (J'ai eu un enorme problème, mon local_Storage se reinitialise à chaque fois, je n'ai pzs trouvé la solution et je serai ravie d'en discuter ultérieurement)
+    // J'ai perdu bcp de temps à comprendre la raison, cela me bloque pour la partie panier
 })
 
 

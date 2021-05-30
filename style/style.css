@@ -825,3 +825,70 @@ a {
     font-size: 2em;
     color:#171717;
 }
+
+/* --_______PANIER____________-- */
+
+.containerpanier h1,
+.containerpanier h2,
+.containerpanier h4 {
+    font-weight: 400;
+}
+
+.containerpanier {
+    width: 85%;
+    margin: 50px auto;
+}
+
+.subtitlepanier {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.infopanier {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 0;
+    border-top: solid 1px #171717;
+}
+
+.total {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-top: solid 1px #171717;
+    padding: 40px 0;
+}
+
+.livraison {
+    display: flex;
+    flex-direction: row;
+}
+
+.livraison img {
+    padding: 0 30px;
+}
+
+.montant span {
+    padding: 0 100px;
+}
+
+.quantity {
+    display: flex;
+    flex-direction: row;
+}
+
+.quantity h3 {
+    padding: 10px;
+}
+
+.footerpanier p {
+    float: right;
+}
+
+/* / ----------------------- */ 
